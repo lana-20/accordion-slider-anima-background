@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accordion Slider with Background Animation</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Serif:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div class="items">
+      <div class="item">
+        <div class="photo">
+          <img alt="photo 1" class="background-photo" src="01.png" />
+        </div>
+        <div class="title">
+          <h3 class="main-title">Blossom</h3>
+          <h4 class="subtitle">
+            Travelling the Length of Heart 🤍
+          </h4>
+        </div>
+      </div>
+      <div class="item">
+        <div class="photo">
+          <img alt="Photo 2" class="background-photo" src="02.png" />
+        </div>
+        <div class="title">
+          <h3 class="main-title">Blossom</h3>
+          <h4 class="subtitle">
+            Travelling the Length of Heart 🤍
+          </h4>
+        </div>
+      </div>
+      <div class="item">
+        <div class="photo">
+          <img alt="Photo 3" class="background-photo" src="03.png" />
+        </div>
+        <div class="title">
+          <h3 class="main-title">Blossom</h3>
+          <h4 class="subtitle">
+            Travelling the Length of Heart 🤍
+          </h4>
+        </div>
+      </div>
+      <div class="item">
+        <div class="photo">
+          <img alt="Photo 4" class="background-photo" src="04.png" />
+        </div>
+        <div class="title">
+          <h3 class="main-title">Blossom</h3>
+          <h4 class="subtitle">
+            Travelling the Length of Heart 🤍
+          </h4>
+        </div>
+      </div>
+      <div class="item">
+        <div class="photo">
+          <img alt="Photo 5" class="background-photo" src="05.png" />
+        </div>
+        <div class="title">
+          <h3 class="main-title">Blossom</h3>
+          <h4 class="subtitle">
+            Travelling the Length of Heart 🤍
+          </h4>
+        </div>
+      </div>
+      <div class="item">
+        <div class="photo">
+          <img alt="Photo 6" class="background-photo" src="06.png" />
+        </div>
+        <div class="title">
+          <h3 class="main-title">Blossom</h3>
+          <h4 class="subtitle">
+            Travelling the Length of Heart 🤍
+          </h4>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      jQuery(".item").hover(function () {
+        var src = jQuery(this).children().first().children().attr("src");
+        jQuery("body").css("background", "url(" + src + ")");
+        jQuery("body").addClass("active");
+      });
+    </script>
+  </body>
+</html>
